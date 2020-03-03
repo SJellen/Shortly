@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+ 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Shortly URL shortening API Challenge</title>
@@ -13,71 +13,176 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+   <script src="https://use.fontawesome.com/dfe13db26f.js"></script>
 </head>
 <body>
 
-  Features
-  Pricing
-  Resources
+  <header>
+    <img src="./images/logo.svg" alt="logo" class="logo">
+    <div class="hamburger">
+      <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </div>
 
-  Login
-  Sign Up
+    <nav class="nav">
+      <ul class="left-links">
+        <li>Features</li>
+        <li>Pricing</li>
+        <li>Resources</li>
+      </ul>
+  
+      <ul class="right-links">
+        <li>Login</li>
+        <li><button class="sign-up">
+          Sign Up
+        </button></li>
+      </ul>
+    </nav>
+   
 
-  More than just shorter links
+   
+  </header>
 
-  Build your brand’s recognition and get detailed insights 
+  <div class="top-flex">
+    <img src="./images/illustration-working.svg" alt="working" class="working">
+
+    <div class="top-word-box">
+      <h1>
+        More than just shorter links
+      </h1>
+      <p>
+        Build your brand’s recognition and get detailed insights 
   on how your links are performing.
+      </p>
+      <button class="get-started">
+        Get Started
+      </button>
+    </div>
+  </div>
 
-  Get Started
+  <div class="shorten-inset">
+    <input type="text"><button class="shorten-it">Shorten It!</button>
+    <img src="./images/bg-shorten-desktop.svg" alt="background" class="shorten-desktop">
+    <img src="./images/bg-shorten-mobile.svg" alt="mobile background" class="shorten-mobile">
 
-  Shorten It!
+  </div>
 
-  Advanced Statistics
-
-  Track how your links are performing across the web with our 
+  <div class="middle">
+    <div class="middle-word-box">
+     <h2>
+      Advanced Statistics
+     </h2>
+     <p>
+      Track how your links are performing across the web with our 
   advanced statistics dashboard.
+     </p>
 
-  Brand Recognition
+    <div class="icon-flex">
+      <span class="aqua-bar"></span>
 
-  Boost your brand recognition with each click. Generic links don’t 
+      <div class="icon-box" id="icon-box1">
+        <img src="./images/icon-brand-recognition.svg" alt="brand recognition">
+        <h3>
+          Brand Recognition
+        </h3>
+        <p>
+          Boost your brand recognition with each click. Generic links don’t 
   mean a thing. Branded links help instil confidence in your content.
+        </p>
+      </div>
 
-  Detailed Records
-
-  Gain insights into who is clicking your links. Knowing when and where 
+      <div class="icon-box" id="icon-box2">
+        <img src="./images/icon-detailed-records.svg" alt="detailed records">
+        <h3>
+          Detailed Records
+        </h3>
+        <p>
+          Gain insights into who is clicking your links. Knowing when and where 
   people engage with your content helps inform better decisions.
+        </p>
+      </div>
 
-  Fully Customizable
+      <div class="icon-box" id="icon-box3">
+        <img src="./images/icon-fully-customizable.svg" alt="fully customizable">
+        <h3>
+          Fully Customizable
+        </h3>
+        <p>
+          Improve brand awareness and content discoverability through customizable 
+          links, supercharging audience engagement.
+        </p>
+      </div>
 
-  Improve brand awareness and content discoverability through customizable 
-  links, supercharging audience engagement.
+    </div>
+    </div>
 
-  Boost your links today
+  </div>
 
-  Get Started
 
-  Features
+  <div class="bottom">
+    <img src="./images/bg-boost-desktop.svg" alt="background" class="desktop-bottom">
+    <img src="./images/bg-boost-mobile.svg" alt="background" class="mobile-bottom">
+    <h2>
+      Boost your links today
+    </h2>
+    <button class="get-started">
+      Get Started
+    </button>
+  </div>
 
-  Link Shortening
-  Branded Links
-  Analytics
+  
+  <footer>
+<img src="./images/logo.svg" alt="logo" class="logo">
 
-  Resources
+<ul class="link-list" id="link-list1">
+<li class="top-link">Features</li>
+<li>Link Shortening</li>
+<li>Branded Links</li>
+<li>Analytics</li>
+</ul>
 
-  Blog
-  Developers
-  Support
 
-  Company
+<ul class="link-list" id="link-list2">
+  <li class="top-link">Resources</li>
+  <li>Blog</li>
+  <li>Developers</li>
+  <li>Support</li>
+</ul>
 
-  About
-  Our Team
-  Careers
-  Contact
+<ul class="link-list" id="link-list3">
+  <li class="top-link">Company</li>
+  <li>About</li>
+  <li>Our Team</li>
+  <li>Careers</li>
+  <li>Contact</li>
+</ul>
+
+
+<div class="social">
+  <img src="./images/icon-facebook.svg" alt="facebook" class="icon">
+  <img src="./images/icon-twitter.svg" alt="twitter" class="icon">
+  <img src="./images/icon-pinterest.svg" alt="pinterest" class="icon">
+  <img src="./images/icon-instagram.svg" alt="instagram" class="icon">
+</div>
+
+
+
+  </footer>
+  
+
+
+  
+
+
+  
+  
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+
+ <script src="./script.js"></script>
 </body>
 </html>

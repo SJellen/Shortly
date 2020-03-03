@@ -15,10 +15,46 @@ $veryDarkViolet: hsl(260, 8%, 14%);
 body {
     max-width: $desktop;
     margin: 0 auto;
+    padding: 0;
     font-size: 18px;
     font-family: 'Poppins', ;
-    
+}
+
+
+header {
+    .hamburger {
+        color: $grayishViolet;
+        float: right;
+        cursor: pointer;
+        margin-right: 2%;
+        margin-top: 2%;
+    }
+
+
+
+
 
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .open {
+    display: block;
+    width: 500px;
+    border: 1px solid red;
+} */
