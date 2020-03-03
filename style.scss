@@ -13,6 +13,7 @@ $veryDarkViolet: hsl(260, 8%, 14%);
 
 
 body {
+    width: 100%;
     max-width: $desktop;
     margin: 0 auto;
     padding: 0;
@@ -22,19 +23,114 @@ body {
 
 
 header {
+    img {
+        margin-top: 3.5rem;
+        margin-left: 12%;
+        overflow: hidden;
+    }
+    .left-links {
+        list-style: none;
+        color: $grayishViolet;
+        margin-left: 21%;
+        margin-top: -2.25rem;
+    }
+    .left-links > li {
+        display: inline-block;
+        font-size: 1rem;
+        padding-right: 1.75rem;
+        font-weight: 500;
+    }
+    .left-links > li:hover {
+        cursor: pointer;
+        color: $veryDarkBlue;
+    }
+    .right-links {
+        list-style: none;
+        color: $grayishViolet;
+        float: right;
+        margin-right: 11.5%;
+        margin-top: -3.25rem;
+    }
+
+    .right-links > li {
+        display: inline-block;
+        font-size: 1rem;
+        padding-left: 2rem;
+        font-weight: 500;
+    }
+
+    .right-links > li:hover {
+        cursor: pointer;
+        color: $veryDarkBlue;
+    }
+
+    .sign-up {
+        background-color: $cyan;
+        width: 106px;
+        height: 40px;
+        border-radius: 25px;
+        font-weight: 700;
+        font-size: 1rem;
+        border: none;
+        color: white;
+    }
+    .sign-up:hover {
+        cursor: pointer;
+        opacity: .5;
+
+    }
     .hamburger {
+        display: none;
         color: $grayishViolet;
         float: right;
         cursor: pointer;
         margin-right: 2%;
         margin-top: 2%;
     }
+}
 
-
-
-
-
-
+.top-flex {
+    width: 100%;
+    height: 700px;
+    overflow-x: hidden;
+    img {
+       float: right;
+       margin-top: 5%;
+       margin-right: -7.75%;
+       
+    }
+    .top-word-box {
+        float: left;
+        max-width: 40%;
+        margin-left: 12%;
+        margin-top: 7rem;
+        h1 {
+            font-size: 4.75rem;
+            color: $veryDarkBlue;
+            line-height: 1.25;
+        }
+        p {
+            color: $grayishViolet;
+            width: 90%;
+            margin-top: -3rem;
+            font-size: 1.25rem;
+        }
+        button {
+            margin-top: 1rem;
+            width: 195px;
+            height: 50px;
+            border-radius: 25px;
+            border: none;
+            background-color: $cyan;
+            color: white;
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+        button:hover {
+            cursor: pointer;
+            opacity: .5;
+        }
+    }
 }
 
 
