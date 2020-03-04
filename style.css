@@ -132,7 +132,7 @@ header .hamburger {
   background-color: #3b3054;
   margin: 0 auto;
   border-radius: 10px;
-  max-height: 165px;
+  min-height: 167px;
 }
 
 .shorten-inset input {
@@ -203,8 +203,29 @@ header .hamburger {
 .shorten-inset img.shorten-desktop {
   border-radius: 10px;
   z-index: 1;
-  margin-top: -7.25rem;
+  position: absolute;
+  margin-top: -11.25%;
   max-width: 1080px;
+}
+
+.shorten-inset p {
+  opacity: 0;
+  position: relative;
+  z-index: 99;
+  margin-left: 5%;
+  font-style: italic;
+  margin-top: .5%;
+  width: 200px;
+  font-size: 1rem;
+  color: red;
+}
+
+.shorten-inset .error input {
+  border: 2px solid #f46262;
+}
+
+.shorten-inset .error p {
+  opacity: 1;
 }
 
 .middle {

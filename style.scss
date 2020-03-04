@@ -138,7 +138,7 @@ header {
     background-color: $darkViolet;
     margin: 0 auto;
     border-radius: 10px;
-    max-height: 165px;
+    min-height: 167px;
     input {
         width: 750px;
         height: 56px;
@@ -189,12 +189,33 @@ header {
     img.shorten-desktop {
         border-radius: 10px;
         z-index: 1;
-        margin-top: -7.25rem;
-        max-width: 1080px;
-        
-        
+        position: absolute;
+        margin-top: -11.25%;
+        max-width: 1080px;   
     }
+    p {
+        opacity: 0;
+        position: relative;
+        z-index: 99;
+        margin-left: 5%;
+        font-style: italic;
+        margin-top: .5%;
+        width: 200px;
+        font-size: 1rem;
+        color: red;
+    }
+    .error {
+        input {
+            border: 2px solid $red;
+        }
+        p {
+            opacity: 1;
+        }
+    }
+
+
 }
+
 
 .middle {
     background-color: hsla(257, 7%, 63%, .1);
