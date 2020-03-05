@@ -17,7 +17,7 @@ hamburger.addEventListener('click', toggleMenu);
 
 
 
-const url = document.getElementById('url')
+const linkBox = document.getElementById('linkBox')
 const form = document.getElementById('form')
 
 // const url = document.getElementById('url')
@@ -33,11 +33,11 @@ function checkInput(e) {
     
 
     if (link.value === '') {
-        url.classList.add('error')
+        linkBox.classList.add('error')
     } else if (!validURL(link.value)) {
-        url.classList.add('error')
+        linkBox.classList.add('error')
     } else {
-        url.classList.remove('error')
+        linkBox.classList.remove('error')
     }
 }
 
@@ -53,4 +53,24 @@ function validURL(str) {
     return !!pattern.test(str);
   }
 
- 
+
+
+
+
+
+
+async function fetchData(url) {
+    try {
+        const req = await fetch("https://rel.ink/api/links/", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringiffy({url: url})
+        });
+        const res = await req.json();
+        return res;
+    } catch (error) {
+        alert(error)
+    }
+}
