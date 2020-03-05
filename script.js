@@ -17,21 +17,24 @@ hamburger.addEventListener('click', toggleMenu);
 
 
 
+const url = document.getElementById('url')
+const form = document.getElementById('form')
 
-const submit = document.getElementById('submit')
 // const url = document.getElementById('url')
 
-submit.addEventListener("click", e => {
+form.addEventListener("submit", e => {
     e.preventDefault();
     checkInput();
 });
 
 
 function checkInput(e) {
-    const url = document.getElementById('url')
+    const link = document.getElementById('link')
     
 
-    if (url.value === '') {
+    if (link.value === '') {
+        url.classList.add('error')
+    } else if (!validURL(link.value)) {
         url.classList.add('error')
     } else {
         url.classList.remove('error')
@@ -39,7 +42,7 @@ function checkInput(e) {
 }
 
 
-/* 
+ 
 function validURL(str) {
     var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
       '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
@@ -50,4 +53,4 @@ function validURL(str) {
     return !!pattern.test(str);
   }
 
- */
+ 
