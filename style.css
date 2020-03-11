@@ -881,6 +881,11 @@ footer .social img:hover {
     width: 100%;
     margin-left: 0;
   }
+  .url-actions .error:after {
+    font-size: .75rem;
+    top: 45%;
+    color: #f46262;
+  }
   .url-actions .r_primary-btn.copyBtn {
     margin-top: 5%;
     margin-bottom: 5%;
@@ -925,6 +930,80 @@ footer .social img:hover {
   }
   footer .list-box {
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .top-flex img {
+    margin-left: 10%;
+  }
+  .url-actions input {
+    width: 85%;
+    margin-bottom: 45%;
+  }
+  .url-actions .url-actions_output-data {
+    margin-right: 28%;
+  }
+  .url-actions .url-actions_input-data {
+    margin-left: 2%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  body {
+    max-width: 100%;
+  }
+  .top-flex .top-word-box {
+    margin: 0 auto;
+  }
+  .top-flex .top-word-box h1 {
+    font-size: 2rem;
+    width: 70%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .top-flex .top-word-box p {
+    width: 65%;
+    margin-left: 5%;
+  }
+  .top-flex .top-word-box .get-started {
+    margin: 0 20%;
+  }
+  .url-actions input {
+    margin-bottom: 55%;
+  }
+  .url-actions .url-actions_output-data {
+    margin-right: 2%;
+  }
+  .middle .middle-word-box h2 {
+    font-size: 1.5rem;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .bottom h2 {
+    font-size: 1.5rem;
+  }
+  .bottom .get-started {
+    margin-left: 25%;
+  }
+  footer {
+    height: auto;
+  }
+  footer img.logo {
+    width: 30%;
+    margin-bottom: 15%;
+  }
+  footer .list-box #link-list1 {
+    margin-left: 7%;
+    text-align: center;
+  }
+  footer .list-box #link-list2 {
+    margin-left: 7%;
+    text-align: center;
+  }
+  footer .list-box #link-list3 {
+    margin-left: 7%;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

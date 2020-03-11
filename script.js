@@ -150,7 +150,6 @@ function setError(node, msg) {
   const errorClassName = "error",
     formAttr = "data-error";
   node.classList.add(errorClassName);
-  // через атрибут формы пробрасываем текст ошибки, которая выводится через свойство псевдоэлемента form:after { content: attr(data-error) }
   node.setAttribute(formAttr, msg);
 }
 
