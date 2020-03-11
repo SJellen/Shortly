@@ -8,10 +8,13 @@ body {
   font-family: "Poppins";
 }
 
+header {
+  width: 100%;
+}
+
 header img {
   margin-top: 3.5rem;
   margin-left: 12%;
-  overflow: hidden;
 }
 
 header .left-links {
@@ -81,19 +84,19 @@ header .hamburger {
 .top-flex {
   width: 100%;
   height: 700px;
-  overflow-x: hidden;
 }
 
 .top-flex img {
   float: right;
   margin-top: 5%;
-  margin-right: -7.75%;
+  margin-right: -37.75%;
+  overflow: hidden;
 }
 
 .top-flex .top-word-box {
   float: left;
   max-width: 40%;
-  margin-left: 12%;
+  margin-left: 5%;
   margin-top: 7rem;
 }
 
@@ -329,7 +332,7 @@ header .hamburger {
 .middle .icon-flex #icon-box1 {
   float: left;
   margin-top: -11%;
-  margin-left: 11.5%;
+  margin-left: 8%;
 }
 
 .middle .icon-flex #icon-box2 {
@@ -349,7 +352,7 @@ header .hamburger {
 .middle .icon-flex #icon-box3 {
   float: right;
   margin-top: -16%;
-  margin-right: 11.75%;
+  margin-right: 8%;
 }
 
 .bottom {
@@ -360,6 +363,10 @@ header .hamburger {
 
 .bottom .mobile-bottom {
   display: none;
+}
+
+.bottom img {
+  overflow: hidden;
 }
 
 .bottom h2 {
@@ -398,8 +405,8 @@ footer img.logo {
 
 footer #link-list1 {
   width: 10%;
-  margin-left: 35%;
-  margin-top: -2.5%;
+  margin-left: 25%;
+  margin-top: -2.5rem;
   font-size: 1rem;
 }
 
@@ -426,8 +433,8 @@ footer #link-list1 .top-link:hover {
 
 footer #link-list2 {
   width: 10%;
-  margin-left: 48%;
-  margin-top: -11.25%;
+  margin-left: 40%;
+  margin-top: -10rem;
   font-size: 1rem;
 }
 
@@ -454,8 +461,8 @@ footer #link-list2 .top-link:hover {
 
 footer #link-list3 {
   width: 10%;
-  margin-left: 61%;
-  margin-top: -11.25%;
+  margin-left: 55%;
+  margin-top: -10rem;
   font-size: 1rem;
 }
 
@@ -482,7 +489,7 @@ footer #link-list3 .top-link:hover {
 
 footer .social {
   float: right;
-  margin-top: -13.5%;
+  margin-top: -11.5rem;
   margin-right: 9%;
   width: 200px;
 }
@@ -514,9 +521,410 @@ footer .social img:hover {
   text-decoration: none;
 }
 
-/* .open {
-    display: block;
+@media screen and (max-width: 1300px) {
+  header img {
+    margin-left: 5%;
+  }
+  header .right-links {
+    margin-right: 5%;
+  }
+  .top-flex img {
+    width: 575px;
+  }
+  .top-flex .top-word-box {
+    width: 400px;
+    margin-left: 7%;
+  }
+  .top-flex .top-word-box h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 5%;
+  }
+  .top-flex .top-word-box p {
+    text-align: center;
+    margin-left: 2%;
+  }
+  .top-flex .top-word-box button {
+    margin-left: 20%;
+  }
+  .url-actions .r_primary-btn {
+    margin-top: -12%;
+  }
+  .r_primary-btn.copyBtn {
+    margin-top: -6%;
+  }
+  .url-actions_output-data {
+    margin-top: -7%;
+  }
+  .middle .icon-flex #icon-box1 {
+    margin-left: 2%;
+  }
+  .middle .icon-flex #icon-box2 {
+    margin-left: 35%;
+    margin-top: -7%;
+  }
+  .middle .icon-flex #icon-box2 .img-circle {
+    margin-top: 5%;
+  }
+  .middle .icon-flex #icon-box3 {
+    margin-right: 2%;
+    margin-top: -20%;
+  }
+  .bottom {
+    height: 250px;
+  }
+  .bottom img {
+    max-width: 100%;
+    height: 100%;
+  }
+  footer img.logo {
+    margin-left: 5%;
+  }
+  footer #link-list1 {
+    margin-left: 20%;
+  }
+  footer #link-list2 {
+    margin-left: 37%;
+    margin-top: -11rem;
+  }
+  footer #link-list3 {
+    margin-left: 55%;
+    margin-top: -9.5rem;
+  }
+  .attribution {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1135px) {
+  .url-actions .r_primary-btn {
+    font-size: 1rem;
+  }
+  .url-actions input {
+    width: 66%;
+  }
+  .url-actions .r_primary-btn.copyBtn {
+    margin-top: -8%;
+  }
+  .url-actions .url-actions_output-data {
+    margin-top: -7%;
+  }
+  .middle {
+    height: 1500px;
+  }
+  .middle .icon-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .middle .icon-flex #icon-box1 {
+    margin: -84% auto 0 auto;
+    z-index: 9;
+  }
+  .middle .icon-flex #icon-box2 {
+    margin: 5% auto 0 auto;
+  }
+  .middle .icon-flex #icon-box3 {
+    margin: 5% auto 0 auto;
+    z-index: 9;
+  }
+  .middle .icon-flex .aqua-bar {
+    height: 700px;
+    border-bottom: none;
+    border-left: 5px solid #2acfcf;
+    margin-left: 50%;
+  }
+  .bottom h2 {
+    margin-top: -12rem;
+  }
+  .list-box {
+    width: 55%;
+    margin-left: 25%;
+    margin-top: -2rem;
+  }
+  .list-box #link-list1 {
+    margin-left: 0;
+    margin-top: 0rem;
+  }
+  .list-box #link-list2 {
+    margin-left: 25%;
+    margin-top: -11.5rem;
+  }
+  .list-box #link-list3 {
+    margin-top: -8.5rem;
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .top-flex img {
+    margin-right: -52%;
+  }
+  .url-actions .form-gradient .r_primary-btn {
+    margin-top: -5.25rem;
+  }
+  .url-actions .form-gradient input {
+    height: 20px;
+  }
+  .url-actions .r_primary-btn.copyBtn {
+    margin-top: -8%;
+  }
+  .url-actions .url-actions_output-data {
+    margin-top: -10%;
+  }
+  .middle .middle-word-box h2 {
     width: 500px;
-    border: 1px solid red;
-} */
+    text-align: center;
+    margin-left: -4rem;
+  }
+  .bottom button {
+    margin-left: 40%;
+  }
+  footer .social {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .r_primary-btn.copyBtn {
+    margin-top: -8%;
+    font-size: 1rem;
+  }
+  .url-actions_input-data {
+    font-size: 1rem;
+  }
+  .url-actions_output-data {
+    margin-top: -7%;
+    font-size: 1rem;
+  }
+  .top-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 35%;
+  }
+  .top-flex img {
+    margin-left: 15%;
+  }
+  .top-flex .top-word-box {
+    min-width: 500px;
+    margin-left: 20%;
+  }
+  .top-flex .top-word-box .get-started {
+    margin-left: 27%;
+  }
+  .middle .icon-flex {
+    margin-top: -5rem;
+  }
+  .middle .icon-flex .icon-box .img-circle {
+    margin-left: 37.5%;
+  }
+  .middle .icon-flex #icon-box1 {
+    margin-top: -45rem;
+    margin-bottom: 3rem;
+  }
+  .middle .icon-flex #icon-box2 {
+    margin-bottom: 3rem;
+  }
+  .middle .icon-flex .aqua-bar {
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .r_primary-btn.copyBtn {
+    margin-bottom: 10%;
+    font-size: 1rem;
+  }
+  .url-actions_input-data {
+    font-size: 1rem;
+  }
+  .url-actions_output-data {
+    margin-top: -8%;
+    font-size: 1rem;
+  }
+  header img {
+    margin-top: 5%;
+  }
+  header .hamburger {
+    display: block;
+    margin-right: 5%;
+    margin-top: 5%;
+  }
+  header .nav {
+    display: none;
+    top: 10%;
+    right: 15px;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 99;
+    background-color: #3b3054;
+    width: 327px;
+    height: 375px;
+    border-radius: 15px;
+  }
+  header .open {
+    display: block;
+  }
+  header .nav .left-links li {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0 0 0;
+    text-align: center;
+    margin-left: -20%;
+  }
+  header .left-links {
+    color: white;
+    margin-top: 1rem;
+  }
+  header .nav .right-links li {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-left: -10%;
+    padding: 10px 0;
+  }
+  header .right-links {
+    color: white;
+    border-top: 1px solid #9e9aa7;
+    width: 75%;
+    padding-top: 45px;
+    margin-top: 1rem;
+    padding-bottom: 20px;
+  }
+  header .sign-up {
+    width: 250px;
+  }
+  header .sign-up:hover {
+    opacity: .75;
+  }
+  header .right-links li:hover {
+    color: #2acfcf;
+  }
+  header .left-links li:hover {
+    color: #2acfcf;
+  }
+  .middle .middle-word-box h2 {
+    margin-left: -30%;
+  }
+  footer {
+    height: 900px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .list-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 5rem;
+  }
+  footer .list-box #link-list1 {
+    margin-left: 25%;
+  }
+  footer .list-box #link-list2 {
+    margin-left: 25%;
+    margin-top: 15%;
+  }
+  footer .list-box #link-list3 {
+    margin-left: 25%;
+    margin-top: 15%;
+  }
+  footer .social {
+    margin: 10% auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  header {
+    margin-bottom: 10%;
+  }
+  .top-flex img {
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+  .top-flex .top-word-box {
+    margin: 5% auto;
+  }
+  .url-actions .url-actions_form {
+    background: top right/100% #3b3054 no-repeat url("./images/bg-shorten-mobile.svg");
+  }
+  .url-actions .form-gradient {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .url-actions input {
+    width: 85%;
+    margin-bottom: 35%;
+  }
+  .url-actions .r_primary-btn {
+    width: 100%;
+    margin-left: 0;
+  }
+  .url-actions .r_primary-btn.copyBtn {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 1rem;
+  }
+  .url-actions .url-actions_input-data {
+    font-size: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #bfbfbf;
+    margin-top: 1%;
+  }
+  .url-actions .url-actions_output-data {
+    margin-top: 5%;
+    font-size: 1rem;
+    float: left;
+    margin-right: 42%;
+  }
+  .middle .middle-word-box {
+    margin-bottom: 15rem;
+    width: 90%;
+  }
+  .middle .middle-word-box h2 {
+    margin-left: -10%;
+    font-size: 2rem;
+  }
+  .bottom .desktop-bottom {
+    display: none;
+  }
+  .bottom .mobile-bottom {
+    display: block;
+    width: 100%;
+  }
+  .bottom h2 {
+    font-size: 2rem;
+  }
+  .bottom .get-started {
+    margin: 0 35%;
+  }
+  footer img.logo {
+    width: 20%;
+    margin: 10% auto 5% auto;
+  }
+  footer .list-box {
+    margin: 0 auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */
